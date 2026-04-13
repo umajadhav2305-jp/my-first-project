@@ -29,7 +29,7 @@ const page = () => {
                                     height={60}
                                     alt="Picture of the author"
                                 />
-   
+   <buttom>click me</buttom>
                             </div>
                             <div className="login_heading">
                                 <h2>Welcome Back!</h2>
