@@ -1,0 +1,319 @@
+:root {
+  --text-color: #FBFBFB;
+  --parah-color: rgb(124, 124, 124);
+  --login-heading-color: #000000;
+  --btn-color: rgb(58 58 200);
+  --hover-color: #3636a9;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+
+}
+
+p {
+  margin: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.container_login {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section_01_login {
+  padding: 60px 0;
+  background: linear-gradient(163deg, #8483cf, transparent);
+}
+
+.login_wr {
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  align-items: center;
+
+}
+
+.login_erp {
+  background-color: var(--btn-color);
+  text-align: center;
+  border-radius: 40px 0 0 40px;
+  padding: 90px 50px;
+}
+
+.login_left {
+  background-color: var(--text-color);
+  border-radius: 40px;
+  padding: 50px;
+  min-height: 600px;
+}
+
+/* .login_logo img {
+  width: 280px;
+} */
+
+.login_heading {
+  margin-top: 30px;
+}
+
+.login_heading h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--login-heading-color);
+}
+
+.login_heading p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: var(--login-heading-color);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.form_section form {
+  margin-top: 40px;
+}
+
+.custom_input {
+  background-color: transparent;
+  padding: 10px 0 10px 0;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid var(--parah-color);
+  width: 100%;
+  height: 50px;
+  color: var(--login-heading-color);
+
+}
+
+.custom_input::placeholder {
+  color: var(--parah-color);
+}
+
+.form_section form input:focus-visible {
+  outline: none;
+}
+
+.login_wr  .input_wr label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--login-heading-color);
+      padding-bottom: 12px;
+    display: block;
+}
+
+.login_wr  .input_icon {
+  position: relative;
+}
+
+.login_wr  .input_icon span {
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.login_wr  .input_icon span {
+  height: 18px;
+  width: 18px;
+  color: var(--login-heading-color);
+}
+
+.login_wr  .input_icon span svg {
+  fill: rgb(70, 69, 69);
+}
+
+.login_wr  .remember_box {
+  display: flex;
+  align-items: center;
+  padding-top: 36px;
+  justify-content: space-between;
+}
+
+
+
+.login_wr  .remember_box a {
+  display: block;
+  text-decoration: none;
+  color: var(--parah-color);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form_section {
+  max-width: 400px;
+}
+
+
+.login_btn {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.login_btn button {
+  padding: 22px 15px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  font-size: 19px;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.login_btn button:hover {
+  background-color: var(--hover-color)
+}
+
+.login_btns {
+  text-align: center;
+}
+
+.login_btns a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--login-heading-color);
+}
+
+/* checkbox css */
+
+.checkbox-wrapper-65 *,
+.checkbox-wrapper-65 ::after,
+.checkbox-wrapper-65 ::before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-65 .cbx {
+  position: relative;
+  display: block;
+  float: left;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: rgb(199 199 199);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15), inset 0 -1px 1px rgba(0, 0, 0, 0.15);
+  transition: all 0.15s ease;
+}
+
+.checkbox-wrapper-65 .cbx svg {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 17;
+  stroke-dashoffset: 17;
+  transform: translate3d(0, 0, 0);
+}
+
+.checkbox-wrapper-65 span {
+  font-size: 16px;
+  color: var(--parah-color);
+}
+
+.checkbox-wrapper-65 .cbx+span {
+  float: left;
+  margin-left: 6px;
+}
+
+.checkbox-wrapper-65 {
+  user-select: none;
+}
+
+.checkbox-wrapper-65 label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-65 input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-wrapper-65 input[type="checkbox"]:checked+.cbx {
+  background-color: #606062;
+  background-image: linear-gradient(#255cd2, #1d52c1);
+}
+
+.checkbox-wrapper-65 input[type="checkbox"]:checked+.cbx svg {
+  stroke-dashoffset: 0;
+  transition: all 0.15s ease;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .login_wr {
+    grid-template-columns: 1fr;
+  }
+
+  .login_right {
+    display: none;
+  }
+
+  .login_left {
+
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .login_left {
+    padding: 50px 20px;
+  }
+
+  .login_logo img {
+    width: 180px;
+  }
+
+  .login_heading h2 {
+    font-size: 24px;
+  }
+
+  .login_heading p {
+    font-size: 16px;
+  }
+
+  .mb-20 {
+    margin-bottom: 10px;
+  }
+
+  .custom_input {
+    font-size: 16px;
+    padding: 6px 20px 6px 0;
+  }
+
+  .input_wr label {
+    font-size: 14px;
+  }
+
+  .checkbox-wrapper-65 span {
+    font-size: 14px;
+  }
+
+  .remember_box a {
+    font-size: 14px;
+  }
+
+}
